@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A02ECF8188632470031A28F /* touchb.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A02ECF7188632470031A28F /* touchb.png */; };
 		4A29914A1878F5D2009530A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2991491878F5D2009530A1 /* Foundation.framework */; };
 		4A29914C1878F5D2009530A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A29914B1878F5D2009530A1 /* CoreGraphics.framework */; };
 		4A29914E1878F5D2009530A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A29914D1878F5D2009530A1 /* UIKit.framework */; };
@@ -21,6 +22,7 @@
 		4A2991731878F5D2009530A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A2991711878F5D2009530A1 /* InfoPlist.strings */; };
 		4A2991751878F5D2009530A1 /* Lateral_ViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2991741878F5D2009530A1 /* Lateral_ViewTests.m */; };
 		4A2991801878F65E009530A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A29917F1878F65E009530A1 /* MainViewController.m */; };
+		4A9CD45E18864131008CA173 /* touchb_.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A9CD45D18864131008CA173 /* touchb_.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A02ECF7188632470031A28F /* touchb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touchb.png; sourceTree = "<group>"; };
 		4A2991461878F5D2009530A1 /* Lateral View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lateral View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2991491878F5D2009530A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4A29914B1878F5D2009530A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +56,7 @@
 		4A2991741878F5D2009530A1 /* Lateral_ViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lateral_ViewTests.m; sourceTree = "<group>"; };
 		4A29917E1878F65E009530A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4A29917F1878F65E009530A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4A9CD45D18864131008CA173 /* touchb_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touchb_.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A02ECF9188632500031A28F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				4A02ECF7188632470031A28F /* touchb.png */,
+				4A9CD45D18864131008CA173 /* touchb_.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		4A29913D1878F5D2009530A1 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +125,7 @@
 		4A29914F1878F5D2009530A1 /* Lateral View */ = {
 			isa = PBXGroup;
 			children = (
+				4A02ECF9188632500031A28F /* images */,
 				4A2991581878F5D2009530A1 /* AppDelegate.h */,
 				4A2991591878F5D2009530A1 /* AppDelegate.m */,
 				4A29917E1878F65E009530A1 /* MainViewController.h */,
@@ -230,6 +244,8 @@
 			files = (
 				4A2991621878F5D2009530A1 /* Images.xcassets in Resources */,
 				4A2991541878F5D2009530A1 /* InfoPlist.strings in Resources */,
+				4A9CD45E18864131008CA173 /* touchb_.png in Resources */,
+				4A02ECF8188632470031A28F /* touchb.png in Resources */,
 				4A29915D1878F5D2009530A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +476,7 @@
 				4A29917A1878F5D2009530A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A29917B1878F5D2009530A1 /* Build configuration list for PBXNativeTarget "Lateral ViewTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +485,7 @@
 				4A29917D1878F5D2009530A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
