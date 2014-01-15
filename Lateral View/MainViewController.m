@@ -50,39 +50,84 @@ UIImageView *tutorialImage;
         /* start tutorial code */
         // shows animation tutorial and set the initial parameters
         
-        if([[UIScreen mainScreen] bounds].size.height == 480){
-            
-            tutorialImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"touchb_.png"]];
-            tutorialImage.frame = CGRectMake(-95, 254, 170, 100);
-            [self.view addSubview:tutorialImage];
-            
-            CGFloat x = 100;
-            CGFloat y = 254;
-            location = CGPointMake(x, y);
-            x = 200;
-            y = 254;
-            locationImage = CGPointMake(x, y);
-        }
-        else{
-            tutorialImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"touchb_.png"]];
-            tutorialImage.frame = CGRectMake(-95, 254, 170, 100);
-            [self.view addSubview:tutorialImage];
-            
-            CGFloat x = 100;
-            CGFloat y = 294;
-            location = CGPointMake(x, y);
-            x = 200;
-            y = 294;
-            locationImage = CGPointMake(x, y);
-        }
-        
-        [UIView animateWithDuration:1.5 delay:1 options:0 animations:^{
-            hiddenView.center = location;
-            tutorialImage.center = locationImage;
-        } completion:^(BOOL finished) { }];
         
         /* end tutorial code */
     }
+    
+    if([[UIScreen mainScreen] bounds].size.height == 480){
+        
+        tutorialImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"touchb_.png"]];
+        tutorialImage.frame = CGRectMake(-95, 254, 170, 100);
+        [self.view addSubview:tutorialImage];
+        
+        CGFloat x = 100;
+        CGFloat y = 254;
+        location = CGPointMake(x, y);
+        x = 200;
+        y = 254;
+        locationImage = CGPointMake(x, y);
+    }
+    else{
+        tutorialImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"touchb_.png"]];
+        tutorialImage.frame = CGRectMake(-95, 254, 170, 100);
+        [self.view addSubview:tutorialImage];
+        
+        CGFloat x = 100;
+        CGFloat y = 294;
+        location = CGPointMake(x, y);
+        x = 200;
+        y = 294;
+        locationImage = CGPointMake(x, y);
+    }
+    
+    [UIView animateWithDuration:1.5 delay:15 options:0 animations:^{
+        hiddenView.center = location;
+        tutorialImage.center = locationImage;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:1 delay:0.5 options:0 animations:^{
+            tutorialImage.alpha = 0;
+        } completion:^(BOOL finished) {
+            [tutorialImage removeFromSuperview];
+            [UIView animateWithDuration:0 delay:0.5 options:0 animations:^{
+                
+                /* Make here a dialog that give instructions */
+                
+            } completion:^(BOOL finished) {
+                /* Making the back animation */
+                if([[UIScreen mainScreen] bounds].size.height == 480){
+                    tutorialImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"touchc.png"]];
+                    tutorialImage.frame = CGRectMake(125, 254, 110, 100);
+                    [self.view addSubview:tutorialImage];
+                    
+                    CGFloat x = -80;
+                    CGFloat y = 254;
+                    location = CGPointMake(x, y);
+                    x = 50;
+                    y = 294;
+                    locationImage = CGPointMake(x, y);
+                }
+                else{
+                    tutorialImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"touchc.png"]];
+                    tutorialImage.frame = CGRectMake(125, 254, 110, 100);
+                    [self.view addSubview:tutorialImage];
+                    
+                    CGFloat x = -80;
+                    CGFloat y = 294;
+                    location = CGPointMake(x, y);
+                    x = 50;
+                    y = 294;
+                    locationImage = CGPointMake(x, y);
+                }
+                [UIView animateWithDuration:2.5 delay:1 options:0 animations:^{
+                    hiddenView.center = location;
+                    tutorialImage.center = locationImage;
+                } completion:^(BOOL finished) {
+                    tutorialImage.alpha = 0;
+                    [tutorialImage removeFromSuperview];
+                }];
+            }];
+        }];
+    }];
     
 }
 

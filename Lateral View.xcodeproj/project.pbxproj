@@ -22,6 +22,7 @@
 		4A2991731878F5D2009530A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A2991711878F5D2009530A1 /* InfoPlist.strings */; };
 		4A2991751878F5D2009530A1 /* Lateral_ViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2991741878F5D2009530A1 /* Lateral_ViewTests.m */; };
 		4A2991801878F65E009530A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A29917F1878F65E009530A1 /* MainViewController.m */; };
+		4A43A70A18864790006AF83A /* touchc.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A43A70918864790006AF83A /* touchc.png */; };
 		4A9CD45E18864131008CA173 /* touchb_.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A9CD45D18864131008CA173 /* touchb_.png */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		4A2991741878F5D2009530A1 /* Lateral_ViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lateral_ViewTests.m; sourceTree = "<group>"; };
 		4A29917E1878F65E009530A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4A29917F1878F65E009530A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4A43A70918864790006AF83A /* touchc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touchc.png; sourceTree = "<group>"; };
 		4A9CD45D18864131008CA173 /* touchb_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touchb_.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 			children = (
 				4A02ECF7188632470031A28F /* touchb.png */,
 				4A9CD45D18864131008CA173 /* touchb_.png */,
+				4A43A70918864790006AF83A /* touchc.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				4A9CD45E18864131008CA173 /* touchb_.png in Resources */,
 				4A02ECF8188632470031A28F /* touchb.png in Resources */,
 				4A29915D1878F5D2009530A1 /* Main.storyboard in Resources */,
+				4A43A70A18864790006AF83A /* touchc.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
