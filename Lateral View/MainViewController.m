@@ -86,7 +86,7 @@ UIImageView *tutorialImage;
                 [tutorialImage removeFromSuperview];
                 [UIView animateWithDuration:0 delay:0.5 options:0 animations:^{
                     
-                    /* Make here a dialog that give instructions */
+                    /* TODO: Make here a dialog that give instructions */
                     
                 } completion:^(BOOL finished) {
                     /* Making the back animation */
