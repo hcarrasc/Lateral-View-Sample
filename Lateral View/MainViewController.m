@@ -21,6 +21,8 @@ UIImageView *tutorialImage;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    hiddenView.alpha = 0.9;
+    
     /* Parameters of position of LateralMenuView : x = -94, y = 17 */
     // if is the iPhone 4+
     if([[UIScreen mainScreen] bounds].size.height == 480){
